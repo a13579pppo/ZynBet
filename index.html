@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZynBet</title>
+  <style>
+    .header { text-align: center; padding: 20px; }
+    .logo { animation: pulse 3s infinite; }
+    .start-btn { background: #0088CC; color: white; padding: 10px; border-radius: 5px; }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="logo.svg" class="logo" alt="ZynBet Logo">
+    <h1>ZynBet</h1>
+    <p>ZynBet: Social Betting & NFT Platform on TON Blockchain</p>
+    <button class="start-btn" onclick="startApp()">Start on Telegram</button>
+  </div>
+  <script>
+    function startApp() {
+      window.Telegram.WebApp.openLink('https://t.me/ZynBetApp');
+    }
+  </script>
+</body>
+</html>
