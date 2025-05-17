@@ -1,0 +1,5 @@
+() pay_taxes(nft_id: int, monthly_tax: int, telegram_fee: int) impure {
+  var total = monthly_tax + telegram_fee;
+  transfer_coins("UQBbDbfN09WPh5vbQwuQNwAYi_GLhSo2MXF1-MK8m002Pixc", total);
+  set_nft_active(nft_id, true);
+}
