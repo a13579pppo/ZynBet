@@ -1,0 +1,5 @@
+() buy_nft(nft_id: int, price: int, telegram_fee: int) impure {
+  var total = price + telegram_fee; // Price + Telegram fee
+  transfer_coins("UQBbDbfN09WPh5vbQwuQNwAYi_GLhSo2MXF1-MK8m002Pixc", total);
+  set_nft_owner(nft_id, get_sender());
+}
