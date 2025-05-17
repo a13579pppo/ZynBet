@@ -1,0 +1,16 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #1a1a1a;
+  color: white;
+}
+button {
+  background: #0088CC;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .nft-grid { grid-template-columns: 1fr; }
+}
